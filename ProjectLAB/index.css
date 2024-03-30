@@ -1,0 +1,244 @@
+/* homepage.css */
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ddd;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #f2f2f2;
+    z-index: 1;
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+  
+  nav ul ul li {
+    float: none;
+  }
+  
+  /* Offers Section */
+  #offers {
+    margin: 20px;
+  }
+  
+  #offers img {
+    border: 2px solid steelblue;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  /* Product Sections */
+  section {
+    margin: 20px;
+  }
+  
+  section h2 {
+    color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  /* labtest.css */
+  
+  /* Header */
+  header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  /* Main Content */
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  /* Lab Test Form */
+  form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  /* Aside */
+  aside {
+    flex: 0 0 200px;
+    margin-left: 20px;
+  }
+  
+  aside img {
+    width: 100%;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+
+  .background-animation {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fadeAnimation 5s infinite;
+}
+
+.image1 {
+    background-image: url('Images/Animation/ani1.jpg');
+}
+
+.image2 {
+    background-image: url('Images/Animation/ani2.jpg');
+}
+
+.image3 {
+    background-image: url('Images/Animation/ani3.jpg');
+}
+.image4 {
+  background-image: url('Images/Animation/ani4.jpg');
+}
+.image5 {
+  background-image: url('Images/Animation/ani5.jpg');
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* homepage.css */
+
+/* Other CSS rules */
+
+/* Covid Care and Diabetes Care Cards */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Display Covid Care cards horizontally */
+#covid-care {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#covid-care .card {
+  flex: 0 0 calc(24% - 20px); /* Adjust card width */
+  margin-bottom: 20px;
+}
+
+/* Diabetes Care Cards */
+#diabetes-care .card {
+  width: 100%;
+}

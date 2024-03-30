@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Test Booking</title>
+  <link rel="stylesheet" href="labTest.css"/>
+</head>
+<body>
+<div class="lab-test-container">
+  <h2>Lab Test Booking Form</h2>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+    </div>
+    <div class="form-group">
+      <label for="patientId">Patient ID (if exists):</label>
+      <input type="text" id="patientId" name="patientId">
+    </div>
+    <div class="form-group">
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+    <!-- Add more address fields as needed -->
+    <div class="form-group">
+      <label for="testType">Choose Test Type:</label>
+      <div class="test-types">
+        <label><input type="checkbox" name="testType" value="CBC"> CBC</label>
+        <label><input type="checkbox" name="testType" value="Complete Urine"> Complete Urine</label>
+        <label><input type="checkbox" name="testType" value="Lipid Profile"> Lipid Profile</label>
+        <label><input type="checkbox" name="testType" value="Thyroid Stimulating Hormone (TSH)"> Thyroid Stimulating Hormone (TSH)</label>
+        <label><input type="checkbox" name="testType" value="Glucose Test"> Glucose Test</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="hardCopy">Do you want a hard copy of the report?</label>
+      <select id="hardCopy" name="hardCopy">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dateTime">Select Your Comfortable Date and Time:</label>
+      <input type="date" id="dateTime" name="dateTime" required>
+      <input type="time" id="time" name="time" required>
+    </div>
+    <div class="form-group">
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <img src="Images/Lab-Test/lab-test.jpg" alt="Image" class="fixed-image">
+</div>
+
+
+</body>
+</html>
